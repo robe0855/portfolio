@@ -1,0 +1,332 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}   
+
+body {
+    background-color: white; /* sets bckg colour */
+}
+
+.container {
+    width: 1024px; 
+    margin: 0 auto;
+}
+
+header .container {
+    position: relative;
+}
+header .container h1 {
+
+}
+ /* / DESKTOP STYLES HERE /
+    / NAVIGATION SECTION / */
+nav a:link,
+nav a:visited {
+        text-align: center;
+        display:  block;
+        color: black;
+        font-size: 21px;
+        padding: 20px;
+        text-decoration: none;
+        text-align: center;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        width: 100%;
+}
+      
+ul {
+          list-style-type: none;
+          margin: 0;
+          padding-top: 50px;
+          overflow: hidden;
+          background-color: transparent;
+        }
+.bannertext {
+float: left;
+margin-left: 160px;
+transition: all 2s;
+text-align: center;
+    }
+    li {
+        display: inline-block;
+        margin-top: 10px;
+        padding-top: 5px;
+        padding-left: 160px;
+        text-align: center;
+        
+     }
+    
+        li a {
+          display: block;
+          color: black;
+          text-align: center;
+          padding: 16px;
+          text-decoration: none;
+        }
+
+        li a:hover {
+            border-radius: 10px;
+            opacity: .2;
+            transition-duration: .3s;
+            transform: translate(0px, -15px);
+            background-color: var(--bs-blue);
+          }
+          li a:active{
+            transition-delay: .1s;
+          }
+
+          li a {
+            animation: 2s slide-right;
+            animation-delay: 0s;
+          }
+
+          h1 {
+            padding-top: 55px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            letter-spacing: -4.7px;
+            font-size: 50px;
+            margin-bottom: -40px;
+             }
+
+             .tracking-in-expand{
+                -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+                animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+              }
+
+             .topnav input[type=text] {
+                float: right;
+                padding: 6px;
+                border-style: solid;
+                border:#EFE9EF;
+                margin-right: -50px;
+                font-size: 17px;
+              }
+    
+              .topnav .search-container {
+                float: right;
+              }
+              .topnav .search-container  {
+                float: right;
+                padding: 6px 10px;
+                margin-top: -10px;
+                margin-right: 16px;
+                background: #EFE9EF;
+                font-size: 17px;
+                border: black;
+                cursor: pointer;
+              }
+              
+              .topnav .search-container button:hover {
+                background: #EFE9EF;
+              }  
+
+            /* dropdown menu styles */
+.dropdownbutton {
+    background-color: transparent;
+    color:black;
+    padding: 16px;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-style: solid;
+    border-color:3px black;
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 25px;
+    width: 90%;
+    max-width: 7155px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: inline;
+   
+    
+}
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    max-width: 995px;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 280px;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropdownbutton {background-color: #f1f1f1;}
+  .dropdown:hover .dropdownbutton {border-color: 3px #ADC6DD;}
+
+
+
+  .inputfields {
+    display: inline;
+    text-align: center; 
+    padding-top: 40px;
+    margin-top: 40px;
+  }
+
+  fieldset{
+    margin-top: 40px;
+    padding-top: 50px;
+    border-radius: 80%;
+    border-style: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+  .fa {
+    margin: 5px 2px;
+    position: relative;
+    text-align: center;
+  }
+  .fa {
+    padding: 30px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: ;
+    border-radius: 40%;
+    margin-left: 30px;
+    top: 30px;
+    
+  }
+  
+  
+  .fa-twitter {
+    background: black;
+    color: white;
+    display: inline;
+  }
+  .fa-instagram {
+    background: black;
+    color: white;
+    display: inline;
+  }
+  .fa-facebook {
+    background: black;
+    color: white;
+    display: inline;
+    width: 20%;
+  }
+  .fa-twitter:hover {
+    opacity: .2;
+    transition-duration: .3s;
+    transform: translate(0px, -15px);
+    background-color:lightblue;
+  }
+ 
+  .fa-instagram:hover {
+    opacity: .2;
+    transition-duration: .3s;
+    transform: translate(0px, -15px);
+    background-color:orange;
+
+  }
+ 
+  .fa-facebook:hover {
+    opacity: .2;
+    transition-duration: .3s;
+    transform: translate(0px, -15px);
+    background-color: navy;
+
+  }
+  .footertwitter{
+    margin-top: 90px;
+  }
+/* sets media queries */
+@media screen and (min-width: 760px) {
+
+    .container {
+        width: 906px;
+        margin: 0 auto;
+    }
+     
+  }
+
+  @-webkit-keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  
+  
+     
+       
+    
+
+
+
